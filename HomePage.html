@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Portfolio Website - Home Page">
+    <title>Biography</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="home-page">
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Biography</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Academic Results</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="1year.html">Year 1</a></li>
+                        <li><a href="2year.html">Year 2</a></li>
+                        <li><a href="3year.html">Year 3</a></li>
+                        <li><a href="4year.html">Year 4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="myprojects.html" class="nav-link">My Projects</a></li>
+                <li class="nav-item"><a href="mygallery.html" class="nav-link">My Gallery</a></li>
+                <li class="nav-item"><a href="myprofile.html" class="nav-link">Profile</a></li>
+                 <a href="LogInPage.html"  onclick="logout()">Logout</a>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                         
+                        <h1 class="hero-name">Hillawet Murefu</h1>
+                        <div class="hero-tags">
+                        </div>
+                        <div class="hero-description">
+                            <p>Hillawet Murefu, a software developer based in Lusaka, Zambia. He is associated with Novatrix Technology Solutions and the University of Lusaka</p>
+                        </div>
+                        <div class="hero-actions">
+                             <a href="myprofile.html" class="btn-primary"onclick="logout()">read more...</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="slideshow-container">
+                        <div class="slide active">
+                             <img src="IMG-20201024-WA0002.jpg" alt="baby hilla" class="profile-image">
+                           
+                        </div>
+                        <div class="slide">
+                            <img src="Screenshot_2020-12-08-11-12-34.jpg" alt="Slide 2" class="profile-image">
+                        </div>
+                        <div class="slide">
+                            <img src="IMG-20201112-WA0009.jpeg" alt="Slide 3" class="profile-image">
+                        </div>
+                        <div class="slide">
+                             <img src="Screenshot_2020-12-10-19-25-07-1.png" alt="Slide 1" class="profile-image">
+                        </div>
+                        
+                        <!-- Navigation arrows -->
+                        <button class="prev" onclick="changeSlide(-1)">❮</button>
+                        <button class="next" onclick="changeSlide(1)">❯</button>
+                        
+                        <!-- Slide indicators -->
+                        <div class="slide-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="video-tutorial-section">
+            <div class="container">
+                <div class="video-header">
+                    <h2>Website Navigation Tutorial</h2>
+                     
+                </div>
+                <class="video-container">
+                    <class="video-wrapper">
+                        <video 
+                            id="tutorialVideo" 
+                            class="tutorial-video" 
+                            controls 
+                            preload="metadata"
+                            poster="assets/video-poster.jpg"
+                        >
+                            <source src="assets/videos/tutorial1.mp4" type="video/mp4">
+                            <source src="assets/website-tutorial.webm" type="video/webm">
+                            <p>Your browser doesn't support HTML5 video. 
+                               <a href="assets/website-tutorial.mp4">Download the video</a> instead.
+                            </p>
+                        </video>
+                        <class="video-overlay">
+                            <class="play-button" onclick="playVideo()">
+                                <i class="fas fa-play"></i>
+                         
+                    <div class="video-info">
+                         
+                 
+        </section>
+
+      
+        <section class="datetime-section">
+            <class="container">
+                <class="datetime-container">
+                    <class="datetime-icon">
+                        <i class="fas fa-clock"></i>
+                     
+                    <class="datetime-content">
+                        <h4>Current Date & Time</h4>
+                        <p id="currentDateTime">Loading...</p>
+                    
+            
+        </section>
+
+
+         
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <h2>Get In Touch</h2>
+                    <p>Let's work together on your next project</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hillawetmurefu@hotmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+260777275685</span>
+                        </div>
+                        
+                 
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; ©2025, Hillawet Murefu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
